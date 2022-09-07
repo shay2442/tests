@@ -93,10 +93,34 @@ function App() {
   function addAuthor(newAuthor) {
     const updatedList = [...books, newAuthor]
     setBooks(updatedList)
-
-
   }
  
+//  const names =['Bailey, Charlie, Shay, Atticus']
+
+//  for(let i = 0; i < names.length; i++){
+//    console.log(names[i])
+//    if(i ===3) break
+   
+//  }
+//  const user = {'firstname':'shay', 'lastName':'Allison'}
+//  for(key in user) console.log(user[key]);
+
+//  let i=0; while(1<10) {
+//    console.log(i);
+// i++;
+//  }
+
+
+
+const message = (a,b) => `Hello ${a}, You are ${b}`
+// console.log(message('Shay', 'awesome"'))
+
+let greeting = (pn) => console.log(`Hello ${pn}`)
+const userInfo=(callback, fName, lName) => {
+  const fullName = `${fName} ${lName}`
+  callback(fullName)
+}
+userInfo(greeting, 'Bailey', 'Wacker')
 
 function handleChange(e) {
   console.log(e.target.value)
